@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador QR</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="logo">
+    <img src="logo.png" alt="Logo" width="100">
+  </div>
+
+  <h1 id="title">Generador QR</h1>
+
+  <div class="container">
+    <div class="form-page active" id="page1">
+      <h2>Paso 1: Introduce la información</h2>
+      <div>
+        <label for="info">Información:</label>
+        <input type="text" id="info" name="info" class="form-input" placeholder="Ingresa la información">
+      </div>
+    </div>
+
+    <div class="form-page" id="page2">
+      <h2>Paso 2: Selecciona el tamaño del QR</h2>
+      <div>
+        <label for="size">Tamaño del QR:</label>
+        <select id="size" name="size" class="form-input">
+          <option value="pequeño">Pequeño</option>
+          <option value="mediano" selected>Mediano</option>
+          <option value="grande">Grande</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="form-page" id="page3">
+      <h2>Paso 3: QR creado</h2>
+      <p>¡Tu QR ha sido creado con éxito!</p>
+      <!-- Aquí puedes mostrar el QR generado -->
+      <div id="qrCode"></div>
+      <input id="text" type="text" value="" style="width:80%" /><br />
+      <div id="qrcode"></div>
+    </div>
+
+    <div class="form-buttons">
+      <button type="button" id="btn-prev" disabled>Anterior</button>
+      <button type="button" id="btn-next">Siguiente</button>
+    </div>
+  </div>
+  <footer>
+    <p>&copy AEG</p>
+  </footer>
+  <script src="script.js"></script>
+  <script src="qrcode.min.js"></script>
+</body>
+
+</html>

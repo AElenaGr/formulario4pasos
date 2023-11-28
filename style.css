@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("123.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 100%; 
+}
+
+
+#qrcode {
+  width: 160px;
+    height: 160px;
+    margin-top: 15px;
+    position: relative;
+  border: 5px solid #ffff99; /* borde qr */
+
+}
+
+#qrcode canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #ffff99; /* borde qr */
+}
+
+
+.container {
+  width: 90%;
+  display: block;
+  max-width: 650px;
+  margin: auto;
+  background-color: rgba(
+    193,
+    239,
+    255,
+    0.8
+  ); 
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(
+    10px
+  ); 
+  border: 5px solid rgba(139, 123, 21, 0.5);
+  font-size: 120%; 
+}
+
+#logo {
+  text-align: center;
+  margin-top: 20px; 
+}
+
+img.logo {
+  width: 100px;
+  border: none;
+  margin-bottom: 10px; 
+}
+.form-page {
+  display: none;
+}
+#title {
+  text-align: center;
+  color: #cc9952;
+  font-family: Arial, sans-serif;
+}
+
+.active {
+  display: block;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #1f67b5;
+}
+
+/* Media query para dispositivos más pequeños */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  #title {
+    font-size: 200%;
+  }
+
+  footer {
+    padding: 10px;
+  }
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.form-buttons button {
+  background-color: #cc9952;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.6s; /* Add smooth transition effect */
+}
+
+.form-buttons button:hover {
+  background-color: #1f67b5; /* Change to the desired blue color */
+}
+
